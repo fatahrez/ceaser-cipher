@@ -5,7 +5,7 @@ public class CeaserCipherTest {
     @Test
     public void ceaserCipher_takeStringInput_stringType() {
         CeaserCipher testCeaserCipher = new CeaserCipher();
-//        String expectedOutput = new String();
-        assertEquals(true, testCeaserCipher.doCeaserCipher("hello"));
+        String expectedOutput = new String();
+        assertEquals(expectedOutput, testCeaserCipher.doCeaserCipher("hello"));
     }
 }
