@@ -9,13 +9,18 @@ public class CeaserCipherTest {
     @Test
     public void ceaserCipher_takeStringInput_string() {
         CeaserCipher testCeaserCipher = new CeaserCipher();
-        assertEquals("hello",testCeaserCipher.doCeaserCipher("hello"));
+        String expectedOutput = new String();
+        expectedOutput = "";
+        assertEquals(expectedOutput, testCeaserCipher.doCeaserCipher(""));
     }
 
     @Test
     public void ceaserCipher_changesStringToArrayChar_charArray() {
         CeaserCipher testCeaserCipher = new CeaserCipher();
-        char expectedOutput[] = {'h','e','l','l','o'};
+//        List<Object> expectedOutput = new ArrayList<Object>();
+        char expectedChar[] = "hello".toCharArray();
+        String expectedOutput = expectedChar.toString();
+        //        expectedOutput.add(expectedChar);
         assertEquals(expectedOutput, testCeaserCipher.doCeaserCipher("hello"));
 
     }

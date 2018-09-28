@@ -2,12 +2,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CeaserCipher {
-    public char[] doCeaserCipher (String wordForCeaserCipher){
-//        List<Object> arrayTestForCeaserCipher = new ArrayList<Object>();
-        char wordTestForCeaserCipher[] = wordForCeaserCipher.toCharArray();
-//        arrayTestForCeaserCipher.add(wordTestForCeaserCipher);
-        System.out.println(wordTestForCeaserCipher);
-
-        return  wordTestForCeaserCipher;
+    public StringBuffer doCeaserCipher (String wordForCeaserCipher, int shiftIndex){
+        StringBuffer result = new StringBuffer();
+        for (int i=0; i<wordForCeaserCipher.length(); i++){
+            if (Character.isUpperCase(wordForCeaserCipher.charAt(i))) {
+                char ch = (char)(((int)wordForCeaserCipher.charAt(i) + shiftIndex - 65)% 26 + 65);
+                result.append(ch);
+            }
+        }
     }
 }
