@@ -2,9 +2,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CeaserCipher {
-    public List<Object> doCeaserCipher (String wordForCeaserCipher){
-        List<Object> wordTestForCeaserCipher = new ArrayList<Object>();
-        wordTestForCeaserCipher.add("");
+    public char[] doCeaserCipher (String wordForCeaserCipher){
+//        List<Object> arrayTestForCeaserCipher = new ArrayList<Object>();
+        char wordTestForCeaserCipher[] = wordForCeaserCipher.toCharArray();
+//        arrayTestForCeaserCipher.add(wordTestForCeaserCipher);
+        System.out.println(wordTestForCeaserCipher);
+
         return  wordTestForCeaserCipher;
     }
 }

@@ -7,22 +7,15 @@ import static org.junit.Assert.*;
 
 public class CeaserCipherTest {
     @Test
-    public void ceaserCipher_takeStringInput_arrayList() {
+    public void ceaserCipher_takeStringInput_string() {
         CeaserCipher testCeaserCipher = new CeaserCipher();
-        List<Object> expectedOutput = new ArrayList<Object>();
-        expectedOutput.add("");
-        assertEquals(expectedOutput, testCeaserCipher.doCeaserCipher("hello"));
+        assertEquals("hello",testCeaserCipher.doCeaserCipher("hello"));
     }
 
     @Test
-    public void ceaserCipher_changesStringToArrayChar_arrayList() {
+    public void ceaserCipher_changesStringToArrayChar_charArray() {
         CeaserCipher testCeaserCipher = new CeaserCipher();
-        List<Object> expectedOutput = new ArrayList<Object>();
-        expectedOutput.add("h");
-        expectedOutput.add("e");
-        expectedOutput.add("l");
-        expectedOutput.add("l");
-        expectedOutput.add("o");
+        char expectedOutput[] = {'h','e','l','l','o'};
         assertEquals(expectedOutput, testCeaserCipher.doCeaserCipher("hello"));
 
     }
