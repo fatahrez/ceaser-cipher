@@ -3,9 +3,9 @@ import static org.junit.Assert.*;
 
 public class CeaserCipherTest {
     @Test
-    public void ceaserCipher_takeStringInput_stringArray() {
+    public void ceaserCipher_takeStringInput_stringType() {
         CeaserCipher testCeaserCipher = new CeaserCipher();
-        String[] expectedOutput = {};
+        String expectedOutput = new String();
         assertEquals(expectedOutput, testCeaserCipher.doCeaserCipher("hello"));
     }
 }
