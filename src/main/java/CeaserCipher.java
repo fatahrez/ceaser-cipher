@@ -1,6 +1,8 @@
 public class CeaserCipher {
-    public String doCeaserCipher (String wordForCeaserCipher){
-        String test = new String();
+    public boolean doCeaserCipher (String wordForCeaserCipher){
+        
+        Boolean test = wordForCeaserCipher== wordForCeaserCipher;
+//        Integer changeIntTestToString = Integer.parseInt(test);
         return test;
     }
 }
