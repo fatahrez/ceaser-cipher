@@ -1,11 +1,23 @@
 import org.junit.Test;
+
+import java.util.ArrayList;
+import java.util.List;
+
 import static org.junit.Assert.*;
 
 public class CeaserCipherTest {
     @Test
     public void ceaserCipher_takeStringInput_stringType() {
         CeaserCipher testCeaserCipher = new CeaserCipher();
-        String expectedOutput = new String();
+        List<Object> expectedOutput = new ArrayList<Object>();
+        expectedOutput.add("");
         assertEquals(expectedOutput, testCeaserCipher.doCeaserCipher("hello"));
     }
+//
+//    @Test
+//    public void ceaserCipher_changesStringTOArrayChar() {
+//        CeaserCipher testCeaserCipher = new CeaserCipher();
+//
+//    }
 }
+

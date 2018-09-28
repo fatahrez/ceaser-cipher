@@ -1,6 +1,10 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class CeaserCipher {
-    public String doCeaserCipher (String wordForCeaserCipher){
-        String wordTestForCeaserCipher = new String();
+    public List<Object> doCeaserCipher (String wordForCeaserCipher){
+        List<Object> wordTestForCeaserCipher = new ArrayList<Object>();
+        wordTestForCeaserCipher.add("");
         return  wordTestForCeaserCipher;
     }
 }
