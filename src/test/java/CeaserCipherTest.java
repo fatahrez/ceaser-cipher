@@ -15,9 +15,16 @@ public class CeaserCipherTest {
     }
 
     @Test
-    public void ceaserCipher_changesStringTOArrayChar() {
+    public void ceaserCipher_changesStringToArrayChar_arrayList() {
         CeaserCipher testCeaserCipher = new CeaserCipher();
-        
+        List<Object> expectedOutput = new ArrayList<Object>();
+        expectedOutput.add("h");
+        expectedOutput.add("e");
+        expectedOutput.add("l");
+        expectedOutput.add("l");
+        expectedOutput.add("o");
+        assertEquals(expectedOutput, testCeaserCipher.doCeaserCipher("hello"));
+
     }
 }
 
