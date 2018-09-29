@@ -26,6 +26,6 @@ public class CeaserCipher {
                 result.append(charr);
             }
         }
-        return  res
+        return result;
     }
 }
