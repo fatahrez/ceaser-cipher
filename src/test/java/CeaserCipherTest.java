@@ -10,19 +10,16 @@ public class CeaserCipherTest {
     public void ceaserCipher_takeStringInput_string() {
         CeaserCipher testCeaserCipher = new CeaserCipher();
         String expectedOutput = new String();
-        expectedOutput = "";
-        assertEquals(expectedOutput, testCeaserCipher.doCeaserCipher(""));
+        expectedOutput = "lipps";
+        assertEquals(expectedOutput, testCeaserCipher.doCeaserCipher("hello", 4));
     }
 
     @Test
     public void ceaserCipher_changesStringToArrayChar_charArray() {
         CeaserCipher testCeaserCipher = new CeaserCipher();
-//        List<Object> expectedOutput = new ArrayList<Object>();
-        char expectedChar[] = "hello".toCharArray();
-        String expectedOutput = expectedChar.toString();
-        //        expectedOutput.add(expectedChar);
-        assertEquals(expectedOutput, testCeaserCipher.doCeaserCipher("hello"));
+        String expectedOutput = new String();
+        expectedOutput = "lipps";
+        assertEquals(expectedOutput, testCeaserCipher.doCeaserCipher("hello", 4));
 
     }
 }
-
