@@ -28,6 +28,6 @@ public class CeaserCipherTest {
         CeaserCipher testCeaaserCipher =  new CeaserCipher();
         String expectedOutput = new String();
         expectedOutput = "hello";
-        assertEquals(expectedOutput, testCeaaserCipher.unDoCeaserCipher("lipps"));
+        assertEquals(expectedOutput, testCeaaserCipher.unDoCeaserCipher("lipps", 4));
     }
 }

@@ -21,7 +21,11 @@ public class CeaserCipher {
                 char charr = (char)(((int)wordForCeaserCipher.charAt(i)+ shiftIndex - 65)% 26 + 65);
                 result.append(charr);
             }
-            else
+            else{
+                char charr = (char)(((int)wordForCeaserCipher.charAt(i)+ shiftIndex - 65)% 26 + 65);
+                result.append(charr);
+            }
         }
+        return  res
     }
 }
