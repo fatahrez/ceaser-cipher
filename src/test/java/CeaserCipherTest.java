@@ -9,21 +9,16 @@ public class CeaserCipherTest {
     @Test
     public void ceaserCipher_takeStringInput_string() {
         CeaserCipher testCeaserCipher = new CeaserCipher();
-        StringBuffer expectedOutput = new StringBuffer();
-//        expectedOutput.append('l');
-//        expectedOutput.append("li");
-//        expectedOutput.append("lip");
-//        expectedOutput.append("lipp");
-        String stringOutput = "lipps";
-        expectedOutput.append(stringOutput);
+        String expectedOutput = new String();
+        expectedOutput = "lipps";
         assertEquals(expectedOutput, testCeaserCipher.doCeaserCipher("hello", 4));
     }
 
     @Test
     public void ceaserCipher_doesEncryption_string() {
         CeaserCipher testCeaserCipher = new CeaserCipher();
-        StringBuffer expectedOutput = new StringBuffer();
-        expectedOutput.append("lipps");
+        String expectedOutput = new String();
+        expectedOutput = "lipps";
         assertEquals(expectedOutput, testCeaserCipher.doCeaserCipher("hello", 4));
 
     }
