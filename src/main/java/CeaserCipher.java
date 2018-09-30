@@ -5,6 +5,7 @@ public class CeaserCipher {
             if (Character.isUpperCase(wordForCeaserCipher.charAt(i))) {
                 char charr = (char)(((int)wordForCeaserCipher.charAt(i) + shiftIndex - 65)% 26 + 65);
                 result.append(charr);
+                String resultString = new String();
             }
             else {
                 char charr = (char)(((int)wordForCeaserCipher.charAt(i)+ shiftIndex -97)% 26 + 97);

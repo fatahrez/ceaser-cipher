@@ -26,6 +26,10 @@ public class App {
             int shiftIndexDecrypt = myScanner.nextInt();
             System.out.println("***********************");
             System.out.println(myCeaserCipher.unDoCeaserCipher(wordToDecrypt, shiftIndexDecrypt));
+        }
+        else{
+            System.out.println("***********************");
+            System.out.println("Sorry! option not found");
 
         }
     }
