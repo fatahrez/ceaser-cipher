@@ -25,9 +25,9 @@ public class CeaserCipherTest {
 
     @Test
     public void ceaserCipher_doesDecryption_string() {
-        CeaserCipher testCeaaserCipher =  new CeaserCipher();
+        CeaserCipher testCeaserCipher =  new CeaserCipher();
         String expectedOutput = new String();
         expectedOutput = "hello";
-        assertEquals(expectedOutput, testCeaaserCipher.unDoCeaserCipher("lipps", 4));
+        assertEquals(expectedOutput, testCeaserCipher.unDoCeaserCipher("lipps", 4));
     }
 }
