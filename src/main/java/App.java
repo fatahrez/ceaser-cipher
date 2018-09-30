@@ -14,6 +14,7 @@ public class App {
             System.out.println("***********************");
             System.out.println("enter number for index to be encrypted on");
             int shiftIndexEncrypt = myScanner.nextInt();
+            System.out.println("***********************");
             System.out.println(myCeaserCipher.doCeaserCipher(wordToEncrypt, shiftIndexEncrypt));
         }
         else if(userInput.equals("decrypt")){
@@ -23,6 +24,7 @@ public class App {
             System.out.println("***********************");
             System.out.println("enter number for index to be decrypted on");
             int shiftIndexDecrypt = myScanner.nextInt();
+            System.out.println("***********************");
             System.out.println(myCeaserCipher.unDoCeaserCipher(wordToDecrypt, shiftIndexDecrypt));
 
         }
