@@ -11,7 +11,6 @@ public class CeaserCipher {
                 result.append(charr);
             }
         }
-        System.out.println(result);
         return result;
     }
     public StringBuffer unDoCeaserCipher(String wordForCeaserCipher, int shiftIndex){
