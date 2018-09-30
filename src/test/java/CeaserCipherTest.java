@@ -17,8 +17,8 @@ public class CeaserCipherTest {
     @Test
     public void ceaserCipher_doesEncryption_string() {
         CeaserCipher testCeaserCipher = new CeaserCipher();
-        String expectedOutput = new String();
-        expectedOutput = "lipps";
+        StringBuffer expectedOutput = new StringBuffer();
+        expectedOutput.append("lipps");
         assertEquals(expectedOutput, testCeaserCipher.doCeaserCipher("hello", 4));
 
     }
