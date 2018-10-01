@@ -15,6 +15,14 @@ public class CeaserCipherTest {
     }
 
     @Test
+    public void ceaserCipher_allowsUppercaseInput_string() {
+        CeaserCipher testCeaserCipher = new CeaserCipher();
+        String expectedOutput = new String();
+        expectedOutput = "LIPPS";
+        assertEquals(expectedOutput, testCeaserCipher.doCeaserCipher("HELLO", 4));
+    }
+    
+    @Test
     public void ceaserCipher_doesEncryption_string() {
         CeaserCipher testCeaserCipher = new CeaserCipher();
         String expectedOutput = new String();

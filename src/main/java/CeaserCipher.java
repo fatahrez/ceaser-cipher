@@ -1,4 +1,6 @@
 public class CeaserCipher {
+
+
     public String doCeaserCipher (String wordForCeaserCipher, int shiftIndex){
         StringBuffer result = new StringBuffer();
         String resultString = new String();
