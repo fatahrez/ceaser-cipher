@@ -26,7 +26,7 @@ There are no known bugs for this web application
 ## Support and contact details
 For more information call +254789268466 or Email me fertahrez@gmail.com
 
-##LICENSE
-Inorder to get license click [HERE](LICENSE)
+## LICENSE
+Inorder to get license click [HERE](LICENSE.md)
 
 Copyright (c) {2018} **Abdulfatah**
