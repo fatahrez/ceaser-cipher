@@ -36,4 +36,11 @@ public class CeaserCipherTest {
         expectedOutput = "hello";
         assertEquals(expectedOutput, testCeaserCipher.unDoCeaserCipher("lipps", 4));
     }
+
+    @Test
+    public void unDoCeaserCipher_takesInUppercaseLetters_string() {
+        CeaserCipher testCeaserCipher = new CeaserCipher();
+        String expectedOutput = "HI";
+        assertEquals(expectedOutput, testCeaserCipher.unDoCeaserCipher("BC", 20));
+    }
 }

@@ -1,22 +1,28 @@
 public class CeaserCipher {
+    private StringBuffer mResult = new StringBuffer();
+    private String mResultString = new String();
 
+    public StringBuffer getResult(){
+        return mResult;
+    }
+    public String getResultString(){
+        return mResultString;
+    }
 
     public String doCeaserCipher (String wordForCeaserCipher, int shiftIndex){
-        StringBuffer result = new StringBuffer();
-        String resultString = new String();
         for (int i=0; i < wordForCeaserCipher.length(); i++){
             if (Character.isUpperCase(wordForCeaserCipher.charAt(i))) {
                 char charr = (char)(((int)wordForCeaserCipher.charAt(i) + shiftIndex - 65)% 26 + 65);
-                result.append(charr);
-                resultString = result.toString();
+                mResult.append(charr);
+                mResultString = mResult.toString();
             }
             else {
                 char charr = (char)(((int)wordForCeaserCipher.charAt(i)+ shiftIndex -97)% 26 + 97);
-                result.append(charr);
-                resultString = result.toString();
+                mResult.append(charr);
+                mResultString = mResult.toString();
             }
         }
-        return resultString;
+        return mResultString;
     }
     public String unDoCeaserCipher(String wordForCeaserCipher, int shiftIndex){
        return doCeaserCipher(wordForCeaserCipher, 26 - shiftIndex);
