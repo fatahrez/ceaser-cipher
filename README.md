@@ -15,13 +15,13 @@ output: b
 * Install gradle for java
 
 ##Database
-There is no database or server setup for this code hence it should be smooth and easy to use. View on [Github](http://fatahrez.github.io/portfolio).
+There is no database or server setup for this code hence it should be smooth and easy to use.
 
 ## Known Bugs
 There are no known bugs for this web application
 
 ## Technologies Used
-*Java
+* Java
 * Intellij IDE
 ## Support and contact details
 For more information call +254789268466 or Email me fertahrez@gmail.com
