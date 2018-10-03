@@ -19,6 +19,6 @@ public class CeaserCipher {
         return resultString;
     }
     public String unDoCeaserCipher(String wordForCeaserCipher, int shiftIndex){
-        return doCeaserCipher(wordForCeaserCipher, shiftIndex * -1);
+       return doCeaserCipher(wordForCeaserCipher, 26 - shiftIndex);
     }
 }

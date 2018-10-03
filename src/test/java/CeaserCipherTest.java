@@ -1,7 +1,5 @@
 import org.junit.Test;
 
-import java.util.ArrayList;
-import java.util.List;
 
 import static org.junit.Assert.*;
 
@@ -21,7 +19,7 @@ public class CeaserCipherTest {
         expectedOutput = "LIPPS";
         assertEquals(expectedOutput, testCeaserCipher.doCeaserCipher("HELLO", 4));
     }
-    
+
     @Test
     public void ceaserCipher_doesEncryption_string() {
         CeaserCipher testCeaserCipher = new CeaserCipher();
