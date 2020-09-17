@@ -5,6 +5,13 @@ import static org.junit.Assert.*;
 
 public class CeaserCipherTest {
     @Test
+    public void ceaserCipher_instanceof_Object() {
+        CeaserCipher ceaserCipher = new CeaserCipher();
+        assertTrue(ceaserCipher instanceof CeaserCipher);
+    }
+
+
+    @Test
     public void ceaserCipher_takeStringInput_string() {
         CeaserCipher testCeaserCipher = new CeaserCipher();
         String expectedOutput = new String();
