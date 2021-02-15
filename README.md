@@ -1,4 +1,4 @@
-# ceaser-cipher
+# Ceaser-Cipher
 #### This is an application for CeaserCipher encryption, 1/10/2018
 #### By **Abdulfatah Mohamed**
 ![ReadmeImg](https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Caesar_cipher_left_shift_of_3.svg/1200px-Caesar_cipher_left_shift_of_3.svg.png "Optional title")
